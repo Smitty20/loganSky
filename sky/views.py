@@ -14,7 +14,7 @@ def home(request):
     
 def contact(request):
     randvar = False
-    template = loader.get_template('sky/home.html')
+    template = loader.get_template('sky/contact.html')
     context = {
         'dont know why I need this': randvar,
     }
@@ -22,7 +22,7 @@ def contact(request):
 
 def purchase(request):
     randvar = False
-    template = loader.get_template('sky/home.html')
+    template = loader.get_template('sky/input.html')
     context = {
         'dont know why I need this': randvar,
     }

@@ -1,21 +1,25 @@
-<!DOCTYPE html>
+{% load staticfiles %}
+
 <html>
 <head>
-   <meta charset="utf-8">
    <title>Logan Sky</title>
-   <link href="/sky/static/sky/skyStyle1.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" type="text/css" href="{% static 'sky/skyStyle.css' %}" />
+   <link rel="icon" type="image/png" href="{% static 'sky/images/logo.png' %}" />
 </head>
-<body>
-	<div class="header">
-		<p>Header</p>
-	</div>
 
-	<div class="sidebar">
-		<p>Nav Bar</p>
-	</div>
-	
-	<div class="body">
-		<p>Contact Us</p>
-	</div>
-</body>
+    <body>
+    	<div class="header">
+    		<h1>Logan Sky</h1>
+    	</div>
+    
+    	<div class="sidebar">
+    		<p>Nav Bar</p>
+    		<a href="/loganSky/">Home</a>
+    		<a href="/loganSky/purchase/">Get a Quote!</a>
+    	</div>
+    	
+    	<div class="body">
+    		<p>Contact information</p>
+    	</div>
+    </body>
 </html>
