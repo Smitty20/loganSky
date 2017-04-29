@@ -1,14 +1,32 @@
 html{
     background: white url("images/logan_back.jpg") no-repeat;
     background-size: 100%;
+    background-attachment: fixed;
 }
 
 div{
     text-align: center;
+    background-color: rgba(0, 0, 120, .5);
+    margin: 80px;
 }
 
 .header{
-    background-color: rgba(0, 0, 120, .5);
+    
+}
+
+.content{
+    padding: 30px;
+}
+
+.body{
+    padding: 50px;
+    background-color: white;
+    
+    font-size: 30px;
+}
+
+.sidebar{
+    background-color: rgba(0, 0, 120, .5);;
 }
 
 h1{
@@ -16,4 +34,8 @@ h1{
     font-family: Georgia, serif;
     font-size: 80px;
     font-style: italic;
+}
+
+ul{
+    padding: 50px;
 }

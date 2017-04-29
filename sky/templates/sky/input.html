@@ -12,14 +12,25 @@
     		<h1>Logan Sky</h1>
     	</div>
     
-    	<div class="sidebar">
-    		<p>Nav Bar</p>
-    		<a href="/loganSky/">Home</a>
-    		<a href="/loganSky/contact/">Contact Us</a>
+    	
+    	<div class="content">
+        	<div class="body">
+        		<h2>Enter Client Information</h2>
+        		<form action="{% url 'sky:submit' %}" method="post">
+        		{% csrf_token %}
+        		    <label>First Name: </label><input type="text"><br>
+        		    <label>Last Name: </label><input type="text"><br>
+        		    <label>Address: </label><input type="text"><br>
+        		    <label>Requested Service: </label><input type="text"><br>
+        		    <input type="submit">
+        		</form>
+        		
+        		<ul>
+            		<p><a href="/loganSky/">Home</a></p>
+        		    <p><a href="/loganSky/contact/">Contact Us</a></p>
+    		    </ul>
+        	</div>
     	</div>
     	
-    	<div class="body">
-    		<p>Please input you information</p>
-    	</div>
     </body>
 </html>

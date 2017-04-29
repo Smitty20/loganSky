@@ -27,3 +27,6 @@ def purchase(request):
         'dont know why I need this': randvar,
     }
     return HttpResponse(template.render(context, request))
+    
+def submit(request):
+    return
