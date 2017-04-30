@@ -13,6 +13,7 @@ class Client(models.Model):
         return self.first_name + " " + self.last_name
     
 class Order(models.Model):
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
     service = models.CharField(max_length=200)
     order_date = models.DateTimeField('date ordered')
     fulfilled = models.BooleanField(default = False)
