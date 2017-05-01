@@ -20,8 +20,8 @@ div{
 
 .body{
     padding: 50px;
-    background-color: white;
-    
+    background-color: black;
+    font-family: Georgia, serif;
     font-size: 30px;
 }
 
@@ -38,4 +38,11 @@ h1{
 
 ul{
     padding: 50px;
+}
+
+#scroller {
+    width: 400px;
+    height: 400px;
+    overflow: scroll;
+    margin: 0 auto;
 }
